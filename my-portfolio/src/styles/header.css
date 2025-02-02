@@ -1,0 +1,101 @@
+/* Basic Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(to right, #7a56d9, #9b70ff);
+}
+
+.logo {
+  flex: 1;
+}
+
+.flag-container {
+  display: flex;
+  align-items: center;
+}
+
+.flag {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  font-family: 'Georgia', serif;
+}
+
+.quote-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex: 2;
+}
+
+.btn {
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #7a56d9;
+  transform: scale(1.05);
+}
+
+.collaboration-btn {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .logo {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .quote-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .quote-container .btn {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+
+  .collaboration-btn {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .btn {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+
+  .flag {
+    font-size: 20px;
+  }
+}

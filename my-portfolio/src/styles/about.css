@@ -1,0 +1,98 @@
+/* General Section Styles */
+.about-section {
+  background: linear-gradient(135deg, #6a1b9a, #283593, #d32f2f); /* Purple to Blue to Red gradient */
+  color: #fff;
+  padding: 60px 20px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.about-description {
+  font-size: 18px;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  font-weight: 300;
+  color: #e0e0e0; /* Lighter gray for better contrast */
+}
+
+.about-description strong {
+  color: #ff4081; /* Bright pink for emphasis */
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Skill Card Styles */
+.skill-card {
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+}
+
+.skill-card h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #64b5f6; /* Soft Blue for headings */
+}
+
+.skill-card p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff; /* White text for contrast */
+}
+
+/* Hover Effects */
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  background-color: rgba(193, 35, 204, 0.3);
+  backdrop-filter: blur(20px);
+}
+
+.skill-card:hover h3 {
+  color: #f65c80; /* Bright pink for heading on hover */
+  /* background-color: white; */
+}
+
+.skill-card:hover p {
+  color: #d1d1d1; /* Light gray for paragraph text on hover */
+}
+
+/* Gradient Animation */
+.about-section {
+  animation: gradientAnimation 5s ease infinite; /* Smooth gradient transition */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 30px;
+  }
+
+  .about-description {
+    font-size: 16px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
